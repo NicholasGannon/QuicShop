@@ -7,5 +7,5 @@ https://quicshop.io/</br>
 
 ## Technologies Used
 - HTML 5
-- Tailwind CSS
+- CSS
 - JavaScript
