@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take your shopping to the next level with QuicShop for common shoppers!">
+    <link rel="icon" type="image/x-icon" href="/assets/FavIcon.svg">
+    <link href="/output.css" rel="stylesheet">
+    <title>QuicShop | Store Chain</title>
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Local JavaScript -->
+    <script src="/script.js" defer></script>
+    <!-- Insert Launchlist script here -->
+    <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
+</head>
+
+<body class="font-montserrat">
+    <!-- Navigation -->
+    <nav class=" max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <img src="/assets/Navigation-Logo.svg" alt="Logo">
+        <ul class="hidden lg:flex gap-8 text-sm text-bluePrimary">
+            <li><a href="#how-it-works" class="hover:underline">How it works</a></li>
+            <li><a href="#benefits" class="hover:underline">Benefits</a></li>
+            <li><a href="/case-study/" class="hover:underline">Case Study</a></li>
+            <li><a href="/about/" class="hover:underline">About QuicShop</a></li>
+        </ul>
+        <a href="#" class="hidden lg:block text-white bg-orangePrimary px-6 py-2 rounded-full"><button>Sign up</button></a>
+        <div class="inline-block lg:hidden cursor-pointer p-1 outline outline-2 rounded-lg outline-blueGray" id="hamburger-button">
+            <div class="w-6 h-hamburgerBar bg-blueAccent rounded-lg m-1.5 transition"></div>
+            <div class="w-6 h-hamburgerBar bg-blueAccent rounded-lg m-1.5 transition"></div>
+            <div class="w-6 h-hamburgerBar bg-blueAccent rounded-lg m-1.5 transition"></div>
+        </div>
+    </nav>
+    <div class="hidden lg:hidden m-6 outline outline-2 outline-blueGray bg-white rounded shadow-xl" id="mobile-menu">
+        <a href="#" class="flex justify-between items-center p-4 border-b-2 border-blueGray border-dashed hover:bg-blueGrayLight">
+            <div class="flex flex-col gap-1 pr-8">
+                <h5 class="text-bluePrimary font-semibold">How it works</h5>
+                <p class="text-blueSecondary text-sm">Learn about the steps involved when using QuicShop</p>
+            </div>
+            <i class="fa-solid fa-chevron-right text-blueSecondary"></i>
+        </a>
+        <a href="#" class="flex justify-between items-center p-4 border-b-2 border-blueGray border-dashed hover:bg-blueGrayLight">
+            <div class="flex flex-col gap-1 pr-8">
+                <h5 class="text-bluePrimary font-semibold">The Benefits</h5>
+                <p class="text-blueSecondary text-sm">View the various benefits that are provided within QuicShop</p>
+            </div>
+            <i class="fa-solid fa-chevron-right text-blueSecondary"></i>
+        </a>
+        <a href="#" class="flex justify-between items-center p-4 border-b-2 border-blueGray border-dashed hover:bg-blueGrayLight">
+            <div class="flex flex-col gap-1 pr-8">
+                <h5 class="text-bluePrimary font-semibold">Case Study</h5>
+                <p class="text-blueSecondary text-sm">Learn how QuicShop made shopping over 60% faster</p>
+            </div>
+            <i class="fa-solid fa-chevron-right text-blueSecondary"></i>
+        </a>
+        <a href="#" class="flex justify-between items-center p-4 hover:bg-blueGrayLight">
+            <div class="flex flex-col gap-1 pr-8">
+                <h5 class="text-bluePrimary font-semibold">About QuicShop</h5>
+                <p class="text-blueSecondary text-sm">Explore the backstory of QuicShop and meet the team</p>
+            </div>
+            <i class="fa-solid fa-chevron-right text-blueSecondary"></i>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-storeChainHero bg-cover bg-no-repeat bg-right py-32 md:py-44">
+        <div class="flex flex-col justify-center items-center px-4">
+            <h1 class="text-2xl md:text-3xl text-white text-center font-semibold">Unlock your store's potential</h1>
+            <p class="text-base md:text-lg text-blueGray text-center mt-3 mb-4 md:mt-5 md:mb-6">Layout your store in accordance with your requirements, and achieve the ultimate customer satisfaction!</p>
+
+            <form action="https://getlaunchlist.com/s/RB7TCY" method="POST" class="flex flex-col sm:flex-row gap-2">
+                <input name="email" type="email" placeholder="Enter your email" class="text-sm pr-8 pl-4 py-2 rounded-full">
+                <button class="text-sm text-white bg-orangePrimary px-6 py-2 rounded-full" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- How it works Section -->
+    <section class="mt-20" id="how-it-works">
+        <div class="text-center">
+            <h2 class="text-2xl font-bold text-bluePrimary">How it works?</h2>
+            <p class="text-base text-blueAccent mt-2">Learn the steps involved when using QuicShop</p>
+            <div class="max-w-7xl flex flex-col lg:flex-row justify-center gap-12 mt-20 mx-12 lg:mx-auto lg:px-4">
+                <div class="flex flex-col items-center justify-start px-8 pb-8 bg-gray-100 rounded-lg w-full lg:w-1/3">
+                    <img src="/assets/StoreChain-MakeList.svg" class="-mt-10">
+                    <h4 class="text-bluePrimary font-bold mt-4 mb-2">Shoppers Make List</h4>
+                    <p class="text-bluePrimary">Create a list from your store's inventory</p>
+                </div>
+                <div class="flex flex-col items-center justify-start px-8 pb-8 bg-gray-100 rounded-lg lg:w-1/3">
+                    <img src="/assets/StoreChain-Navigate.svg" class="-mt-8">
+                    <h4 class="text-bluePrimary font-bold mt-4 mb-2">Navigate</h4>
+                    <p class="text-bluePrimary">Seamless navigation throughout your store</p>
+                </div>
+                <div class="flex flex-col items-center justify-start px-8 pb-8 bg-gray-100 rounded-lg lg:w-1/3">
+                    <img src="/assets/StoreChain-Data.svg" class="-mt-8">
+                    <h4 class="text-bluePrimary font-bold mt-4 mb-2">Collect Data</h4>
+                    <p class="text-bluePrimary">Know and learn the behavior of your shoppers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="max-w-7xl mx-auto py-20" id="benefits">
+        <div class="text-center">
+            <h2 class="text-2xl font-bold text-bluePrimary">Benefits</h2>
+            <p class="text-base text-blueAccent mt-2 mb-6">View the various benefits that QuicShop provides</p>
+            <div class="flex flex-col sm:grid sm:grid-cols-2 xl:flex xl:flex-row xl:items-center">
+                <div class="flex flex-col justify-center items-center p-8">
+                    <img src="/assets/StoreChain-Benefits1.svg" alt="Shopper icon" class="max-w-36">
+                    <h4 class="text-bluePrimary font-semibold my-3">Data Collection</h4>
+                    <p class="text-sm text-blueTertiary">Customer's shopping habits become relevant</p>
+                </div>
+                <div class="flex flex-col justify-center items-center p-8">
+                    <img src="/assets/StoreChain-Benefits2.svg" alt="Shopper icon" class="max-w-36">
+                    <h4 class="text-bluePrimary font-semibold my-3">Targeted ads and deals </h4>
+                    <p class="text-sm text-blueTertiary">Assists in deciding what your shoppers purchase and view</p>
+                </div>
+                <div class="flex flex-col justify-center items-center p-8">
+                    <img src="/assets/StoreChain-Benefits3.svg" alt="Shopper icon" class="max-w-36">
+                    <h4 class="text-bluePrimary font-semibold my-3">Hottest items</h4>
+                    <p class="text-sm text-blueTertiary">Learn which popular items are best sellers</p>
+                </div>
+                <div class="flex flex-col justify-center items-center p-8">
+                    <img src="/assets/StoreChain-Benefits4.svg" alt="Shopper icon" class="max-w-36">
+                    <h4 class="text-bluePrimary font-semibold my-3">Loyalty program exposure</h4>
+                    <p class="text-sm text-blueTertiary">If applicable, promote your Loyalty program to a new audience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bluePrimary flex flex-col footerCustom:flex-row footerCustom:justify-center gap-6 footerCustom:gap-12 p-8 footerCustom:p-16">
+        <ul>
+            <li class="text-lg text-white font-semibold my-2">Sign up</li>
+            <form action="https://getlaunchlist.com/s/RB7TCY" method="POST" class="flex flex-col xs:flex-row gap-2">
+                <input name="email" type="email" placeholder="Enter your email" class="text-xs pr-8 pl-4 py-2 rounded-full">
+                <button class="text-xs text-white bg-orangePrimary px-6 py-2 rounded-full" type="submit">Sign Up</button>
+            </form>
+        </ul>
+
+        <ul class="flex flex-col gap-0.5 mt-4 footerCustom:mt-0">
+            <li class="text-lg text-white font-semibold mb-2">Company</li>
+            <li><a href="/common-shopper/" class="text-sm text-blueTertiary hover:text-white hover:underline">Common Shoppers</a></li>
+            <li><a href="/personal-shopper/" class="text-sm text-blueTertiary hover:text-white hover:underline">Personal Shoppers</a></li>
+            <li><a href="" class="text-sm text-blueTertiary hover:text-white hover:underline">Store Chains</a></li>
+            <li><a href="/about/" class="text-sm text-blueTertiary hover:text-white hover:underline">About QuicShop</a></li>
+            <li><a href="/case-study/" class="text-sm text-blueTertiary hover:text-white hover:underline">Case Study</a></li>
+        </ul>
+
+        <ul class="flex flex-col gap-0.5">
+            <li class="text-lg text-white font-semibold my-2 footerCustom:my-0 footerCustom:mb-2">Contact us</li>
+            <li><a href="mailto:updates@quicshop.io" class="text-sm text-blueTertiary hover:text-white hover:underline">updates@quicshop.io</a></li>
+            <li><a href="mailto:sean.regis@quicshop.io" class="text-sm text-blueTertiary hover:text-white hover:underline">Sean Regis</a></li>
+            <li><a href="mailto:justin.regis@quicshop.io" class="text-sm text-blueTertiary hover:text-white hover:underline">Justin Regis</a></li>
+            <li><a href="mailto:rjoel@entrepeneurxl.com" class="text-sm text-blueTertiary hover:text-white hover:underline">Ross Joel</a></li>
+        </ul>
+
+        <ul>
+            <img src="/assets/Footer-Logo.svg" alt="Logo" class="max-w-36 my-4">
+            <p class="text-sm text-blueTertiary">© 2024 Carb Group, LLC. All <span id="rights-reserved">rights reserved.</p>
+        </ul>
+    </footer>
+</body>
+
+</html>

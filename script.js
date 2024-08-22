@@ -1,43 +1,13 @@
-const hamburgerIcon = document.querySelector(".hamburger-icon");
-const xIcon = document.querySelector(".x-icon");
-const dropDown = document.querySelector(".nav-list");
-const firstNavLink = document.querySelector("#nav-first-link");
-const secondNavLink = document.querySelector("#nav-second-link");
-const thirdNavLink = document.querySelector("#nav-third-link");
-const fourthNavLink = document.querySelector("#nav-fourth-link");
+const initApp = () => {
+    const hamburgerBtn = document.getElementById('hamburger-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-hamburgerIcon.addEventListener("click", () => {
-    hamburgerIcon.classList.toggle('active');
-    xIcon.classList.toggle('active');
-    dropDown.classList.toggle('active');
-});
+    const toggleMenu = () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('block');
+    }
 
-xIcon.addEventListener("click", () => {
-    hamburgerIcon.classList.toggle('active');
-    xIcon.classList.toggle('active');
-    dropDown.classList.toggle('active');
-});
+    hamburgerBtn.addEventListener('click', toggleMenu);
+}
 
-firstNavLink.addEventListener("click", () => {
-    hamburgerIcon.classList.toggle('active');
-    xIcon.classList.toggle('active');
-    dropDown.classList.toggle('active');
-})
-
-secondNavLink.addEventListener("click", () => {
-    hamburgerIcon.classList.toggle('active');
-    xIcon.classList.toggle('active');
-    dropDown.classList.toggle('active');
-})
-
-thirdNavLink.addEventListener("click", () => {
-    hamburgerIcon.classList.toggle('active');
-    xIcon.classList.toggle('active');
-    dropDown.classList.toggle('active');
-})
-
-fourthNavLink.addEventListener("click", () => {
-    hamburgerIcon.classList.toggle('active');
-    xIcon.classList.toggle('active');
-    dropDown.classList.toggle('active');
-})
+document.addEventListener('DOMContentLoaded', initApp);
