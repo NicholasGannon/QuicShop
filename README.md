@@ -7,13 +7,24 @@
 
 ## Overview
 - Live website for **QuicShop:** An application aimed at simplifying the shopping experience through navigation assistance [(click here to view)](https://quicshop.io/)
-- The **goal of this website** is to allow users to complete the following:
-  - **Learn more** about the application, how it works, and the benefits
-  - Sign up for the application's **waitlist**
-  - View the various **kinds of shoppers** that QuicShop has available
-  - **Meet the team** behind QuicShop and learn about its inception
 
-## To-Be-Implemented
-- A **startup selection page,** where users can select which type of shopper they are.
-- Subpages for each kind of unique shopper **(common, personal, or store chain).**
-- An udated and improved **navigation menu.**
+## Installation
+```bash
+# Clone the repository
+git clone https://github.com/NicholasGannon/QuicShop.git
+
+# Move into the repository
+cd QuicShop
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## Goals of this Website
+- **Learn more** about QuicShop, how it works, and the benefits
+- Sign up for the application's **waitlist**
+- View the various **kinds of shoppers**
+- **Meet the team** behind QuicShop
