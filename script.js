@@ -1,13 +1,7 @@
-const initApp = () => {
-    const hamburgerBtn = document.getElementById('hamburger-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+shopperTypeButton = document.getElementById('shopperTypeButton');
+shopperTypeButton.addEventListener("click", toggleArrow);
+arrow = documnet.getElementById('arrow');
 
-    const toggleMenu = () => {
-        mobileMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('block');
-    }
-
-    hamburgerBtn.addEventListener('click', toggleMenu);
+function toggleArrow() {
+    arrow.classList.toggle('rotate-180');
 }
-
-document.addEventListener('DOMContentLoaded', initApp);
