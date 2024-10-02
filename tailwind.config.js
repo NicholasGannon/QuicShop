@@ -7,6 +7,10 @@ module.exports = {
         DMSans: ["DM Sans", "sans-serif"],
       },
 
+      screens: {
+        'xs': '450px',
+      },
+
       colors: {
         orangePrimary: "#FF6C11",
         orangeSecondary: "#EC5A00",
