@@ -45,12 +45,44 @@
                         <a href="#" class="text-white border border-orangePrimary bg-orangePrimary px-6 py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300">Sign up</a>
                     </li>
                 </ul>
+                <a href="#" class="text-3xl lg:hidden text-bluePrimary" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </nav>
         </div>
     </header>
 
+    <!-- Side Bar Navigation -->
+    <section class="z-10 hidden right-0 bg-white h-full p-12 shadow-lg" id="sidebar">
+        <ul class="flex flex-col gap-6">
+            <li>
+                <a href="/" class="hover:underline">Home</a>
+            </li>
+
+            <li>
+                <a href="/#about" class="hover:underline">About us</a>
+            </li>
+
+            <li>
+                <a href="/#team" class="hover:underline">Meet the Team</a>
+            </li>
+
+            <li>
+                <a href="#" class="hover:underline" id="shopperTypeButton">Shopper Type <i class="fa-solid fa-chevron-down transition-all duration-300" id="arrow"></i></a>
+            </li>
+
+            <li>
+                <a href="#contact" class="text-bluePrimary border border-bluePrimary px-4 py-1.5 rounded-full hover:bg-bluePrimary hover:text-white hover:duration-300">Contact us</a>
+            </li>
+            
+            <li>
+                <a href="#" class="text-white border border-orangePrimary bg-orangePrimary px-6 py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300">Sign up</a>
+            </li>
+        </ul>
+    </section>
+
     <!-- Main Content -->
-    <main class="bg-gradient-to-tr md:bg-gradient-to-tl from-[#D0D2EB] via-white to-[#D0D2EB] pt-16">
+    <main class="bg-gradient-to-tr md:bg-gradient-to-tl from-[#D0D2EB] via-white to-[#D0D2EB] pt-16" id="main">
         <!-- Hero Section -->
         <section class="max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-8 px-6 md:px-12">
             <div class="flex flex-col-reverse gap-4 md:flex-col col-start-1 col-end-5">
