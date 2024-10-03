@@ -11,6 +11,21 @@ module.exports = {
         'xs': '450px',
       },
 
+      animation: {
+        'open-menu': 'open-menu 0.5s ease-in-out forwards',
+      },
+
+      keyframes: {
+        'open-menu': {
+          '0%': {
+            transform: 'translateX(100%)',
+          },
+          '100%': {
+            transform: 'translateX(0%)',
+          }
+        },
+      },
+
       colors: {
         orangePrimary: "#FF6C11",
         orangeSecondary: "#EC5A00",

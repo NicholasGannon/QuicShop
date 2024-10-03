@@ -16,7 +16,7 @@
 </head>
 <body class="font-DMSans">  
     <!-- Navbar -->
-    <header class="shadow-lg">
+    <header class="relative shadow-lg">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-12 py-6">
             <a href="/"><img src="/assets/Logo.svg" class="max-w-40" alt="Logo"></a>
             <nav>
@@ -53,7 +53,7 @@
     </header>
 
     <!-- Side Bar Navigation -->
-    <section class="z-10 hidden right-0 bg-white h-full p-12 shadow-lg" id="sidebar">
+    <section class="z-10 hidden right-0 bg-white h-full p-12 shadow-lg animate-open-menu" id="sidebar">
         <ul class="flex flex-col items-start gap-6">
             <li class="text-bluePrimary">
                 <i class="fa-solid fa-house"></i>
@@ -96,7 +96,7 @@
     </section>
 
     <!-- Main Content -->
-    <main>
+    <main class="bg-white" id="main">
         <!-- Hero Section -->
         <section class="custom-container flex flex-col gap-6 sm:grid sm:grid-cols-2 px-6 md:px-12">
             <div class="flex flex-col justify-center gap-6">
