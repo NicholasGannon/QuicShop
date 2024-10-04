@@ -9,10 +9,22 @@ function toggleArrow() {
 main = document.getElementById('main');
 sidebar = document.getElementById('sidebar');
 hamburger = document.getElementById('hamburger');
+
 hamburger.addEventListener('click', toggleSidebar);
+window.addEventListener('resize', handleResize);
 
 function toggleSidebar() {
     sidebar.classList.toggle('absolute');
     sidebar.classList.toggle('hidden');
     main.classList.toggle('brightness-50');
+}
+
+function handleResize() {
+    if (window.innerWidth > 800) {
+        if (!sidebar.classList.contains('hidden')) {
+            sidebar.classList.add('hidden');
+            sidebar.classList.remove('absolute');
+            main.classList.remove('brightness-50');
+        }
+    }
 }
