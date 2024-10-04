@@ -20,7 +20,7 @@ function toggleSidebar() {
 }
 
 function handleResize() {
-    if (window.innerWidth > 800) {
+    if (window.innerWidth > 1024) {
         if (!sidebar.classList.contains('hidden')) {
             sidebar.classList.add('hidden');
             sidebar.classList.remove('absolute');
