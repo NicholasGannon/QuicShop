@@ -10,6 +10,11 @@ main = document.getElementById('main');
 sidebar = document.getElementById('sidebar');
 hamburger = document.getElementById('hamburger');
 
+sidebarLinks = document.querySelectorAll('.sidebar-link');
+sidebarLinks.forEach(link => {
+    link.addEventListener('click', toggleSidebar);
+});
+
 hamburger.addEventListener('click', toggleSidebar);
 window.addEventListener('resize', handleResize);
 
