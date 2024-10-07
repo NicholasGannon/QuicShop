@@ -1,9 +1,12 @@
 shopperTypeButton = document.getElementById('shopperTypeButton');
 shopperTypeButton.addEventListener("click", toggleArrow);
 arrow = document.getElementById('arrow');
+shopperTypeLinks = document.getElementById('shopper-type-links');
 
 function toggleArrow() {
     arrow.classList.toggle('rotate-180');
+    shopperTypeLinks.classList.toggle('flex');
+    shopperTypeLinks.classList.toggle('hidden');
 }
 
 main = document.getElementById('main');
