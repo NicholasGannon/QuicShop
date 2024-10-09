@@ -819,7 +819,7 @@ video {
 
 .border-orangePrimary {
   --tw-border-opacity: 1;
-  border-color: rgb(255 108 17 / var(--tw-border-opacity));
+  border-color: rgb(255 98 0 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -839,7 +839,7 @@ video {
 
 .bg-orangePrimary {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 108 17 / var(--tw-bg-opacity));
+  background-color: rgb(255 98 0 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -1018,17 +1018,12 @@ video {
 
 .text-orangePrimary {
   --tw-text-opacity: 1;
-  color: rgb(255 108 17 / var(--tw-text-opacity));
+  color: rgb(255 98 0 / var(--tw-text-opacity));
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .underline {
