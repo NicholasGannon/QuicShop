@@ -105,11 +105,15 @@
 
     <!-- Main Content -->
     <main class="bg-white" id="main">
+        <!-- Hero Section -->
         <section class="custom-container flex flex-col gap-6 sm:grid sm:grid-cols-2 px-6 md:px-12">
-            <div class="flex flex-col items-start justify-center gap-6">
+            <div class="flex flex-col justify-center gap-6">
                 <h1 class="font-semibold leading-tight" style="font-size: clamp(1rem, 1.5vw + 1rem, 2.5rem)">What can QuicShop provide to Store Chains?</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                <a href="#" class="text-sm text-white bg-bluePrimary px-6 py-1.5 rounded-full">Learn More</a>
+                <form class="flex flex-col sm:flex-row gap-3" action="https://getlaunchlist.com/s/RB7TCY" method="POST">
+                    <input name="email" type="email" placeholder="Enter email address" autocomplete="off" class="text-sm px-6 py-1.5 rounded-full border border-gray-400 focus:outline-none text-gray-600">
+                    <button type="submit" class="text-sm text-white bg-bluePrimary px-6 py-1.5 rounded-full hover:bg-blueDark hover:duration-300">Sign up</button>
+                </form>
             </div>
             <img src="/assets/Store-Chain-Icon.svg" alt="An icon of a storefront" class="justify-self-end rounded-xl">
         </section>

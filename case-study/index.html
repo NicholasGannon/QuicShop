@@ -48,7 +48,7 @@
                     </li>
                     
                     <li>
-                        <a href="#" class="text-white border border-orangePrimary bg-orangePrimary px-6 py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300">Sign up</a>
+                        <a href="#sign-up" class="text-white border border-orangePrimary bg-orangePrimary px-6 py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300">Sign up</a>
                     </li>
                 </ul>
                 <button class="text-3xl lg:hidden text-bluePrimary" id="hamburger" aria-label="Open the menu">
@@ -96,7 +96,7 @@
             </li>
             
             <li>
-                <a href="#" class="text-white border border-orangePrimary bg-orangePrimary px-[55px] py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300 sidebar-link">Sign up</a>
+                <a href="#sign-up" class="text-white border border-orangePrimary bg-orangePrimary px-[55px] py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300 sidebar-link">Sign up</a>
             </li>
         </ul>
     </section>
@@ -108,7 +108,7 @@
             <div class="flex flex-col-reverse gap-4 md:flex-col col-start-1 col-end-5">
                 <img src="/assets/Browsing-Items.png" alt="A person browsing items in a grocery store aisle" class="rounded-xl mb-8">
                 <div class="flex flex-col gap-4">
-                    <h2 class="font-bold text-orangePrimary">Group Assignments</h2>
+                    <span class="font-bold text-orangePrimary">Group Assignments</span>
                     <h1 class="font-semibold text-3xl">Determining Control vs. Treatment</h1>
                     <p>The first group, referred to as the <span class="underline">control group,</span> undertook this shopping challenge without the aid of QuicShop</p>
                     <p>Meanwhile, the second group known as the <span class="underline">treatment group,</span> were equipped with QuicShop's navigation system to assist them in locating each item seamlessly.</p>
@@ -117,7 +117,7 @@
             <span class="hidden md:block col-start-5 col-end-6 h-full bg-gray-200 w-0.5 justify-self-center"></span>
             <div class="col-start-6 col-end-9">
                 <div class="flex flex-col gap-4">
-                    <h3 class="font-bold text-orangePrimary">Beginning Stage</h3>
+                    <span class="font-bold text-orangePrimary">Beginning Stage</span>
                     <h2 class="font-semibold text-3xl">Starting July 2023</h2>
                     <p>In July 2023, QuicShop embarked on a pioneering initiative aimed at enhancing the shopper experience at <span class="underline">Green Way Markets</span> in Ridgewood, New Jersey.</p>
                     <p>The study involved the formation of two distinct groups, both of whom were unfamiliar with the store's layout. These groups were entrusted with the task of locating 15 items from various sections of the store.</p>
@@ -135,7 +135,7 @@
         <section class="max-w-7xl mx-auto flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12 px-6 md:px-12 pb-16">
             <img src="/assets/Family-Grocery-Shopping.png" alt="A family choosing vegetables in the grocery store" class="rounded-xl mb-8">
             <div class="flex flex-col gap-4">
-                <h3 class="font-bold text-orangePrimary">Our Findings</h3>
+                <span class="font-bold text-orangePrimary">Our Findings</span>
                 <h2 class="font-semibold text-3xl">Improving Shopping Efficiency</h2>
                 <p>The findings of this experiment were nothing short of remarkable. A comparison between the control and treatment groups highlighted an astonishing <span class="underline">61% reduction</span> in shopping time for the latter.</p>
                 <p class="mb-8">This outcome demonstrated the efficiency that QuicShop introduces into the shopping experience!</p>
@@ -147,15 +147,15 @@
     <footer class="bg-bluePrimary" id="contact">
         <div class="custom-container flex flex-col lg:flex-row justify-between gap-6 px-6 md:px-12">
             <div class="flex flex-col gap-3">
-                <h5 class="text-white font-semibold">Sign up</h5>
-                <form class="flex flex-col sm:flex-row gap-3">
-                    <input placeholder="Email address" class="bg-transparent text-sm text-white placeholder-white border border-white focus:outline-none px-6 py-1.5 rounded-full" type="email" name="Email" autocomplete="off">
-                    <input type="submit" value="Sign up" class="bg-white text-sm text-bluePrimary px-6 py-1.5 rounded-full">
+                <span class="text-white font-semibold">Sign up</span>
+                <form class="flex flex-col sm:flex-row gap-3" action="https://getlaunchlist.com/s/RB7TCY" method="POST">
+                    <input name="email" type="email" placeholder="Email address" autocomplete="off" class="bg-transparent text-sm text-white placeholder-white border border-white focus:outline-none px-6 py-1.5 rounded-full" id="sign-up">
+                    <button type="submit" class="bg-white text-sm text-bluePrimary px-6 py-1.5 rounded-full">Sign up</button>
                 </form>
             </div>
 
             <div class="flex flex-col gap-2">
-                <h6 class="text-white font-semibold">Company</h6>
+                <span class="text-white font-semibold">Company</span>
                 <ul class="flex flex-col gap-1 text-blueSecondary">
                     <li>
                         <a href="/common-shopper/" class="hover:underline">Common Shoppers</a>
@@ -184,7 +184,7 @@
             </div>
 
             <div class="flex flex-col gap-2">
-                <h6 class="text-white font-semibold">Contact</h6>
+                <span class="text-white font-semibold">Contact</span>
                 <ul class="flex flex-col gap-1 text-blueSecondary">
                     <li>
                         <a href="#" class="hover:underline">updates@quicshop.io</a>

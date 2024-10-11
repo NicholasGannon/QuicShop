@@ -1026,6 +1026,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-blueDark {
+  --tw-text-opacity: 1;
+  color: rgb(43 41 64 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1073,10 +1078,6 @@ video {
   transition-duration: 300ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1120,10 +1121,6 @@ video {
 
 .hover\:duration-300:hover {
   transition-duration: 300ms;
-}
-
-.hover\:duration-1000:hover {
-  transition-duration: 1000ms;
 }
 
 .focus\:outline-none:focus {
