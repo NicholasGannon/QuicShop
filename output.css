@@ -1073,6 +1073,10 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1083,6 +1087,11 @@ video {
   max-width: 80rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.hover\:bg-blueDark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 41 64 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-bluePrimary:hover {
@@ -1111,6 +1120,10 @@ video {
 
 .hover\:duration-300:hover {
   transition-duration: 300ms;
+}
+
+.hover\:duration-1000:hover {
+  transition-duration: 1000ms;
 }
 
 .focus\:outline-none:focus {

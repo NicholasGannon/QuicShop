@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- LaunchList Script -->
+    <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
 </head>
 <body class="font-DMSans">
     <!-- Navbar -->
@@ -189,9 +191,9 @@
         <div class="custom-container flex flex-col lg:flex-row justify-between gap-6 px-6 md:px-12">
             <div class="flex flex-col gap-3">
                 <h4 class="text-white font-semibold">Sign up</h4>
-                <form class="flex flex-col sm:flex-row gap-3">
-                    <input placeholder="Email address" class="bg-transparent text-sm text-white placeholder-white border border-white focus:outline-none px-6 py-1.5 rounded-full" type="email" name="Email" autocomplete="off">
-                    <input type="submit" value="Sign up" class="bg-white text-sm text-bluePrimary px-6 py-1.5 rounded-full">
+                <form class="flex flex-col sm:flex-row gap-3" action="https://getlaunchlist.com/s/RB7TCY" method="POST">
+                    <input name="email" type="email" placeholder="Email address" autocomplete="off" class="bg-transparent text-sm text-white placeholder-white border border-white focus:outline-none px-6 py-1.5 rounded-full">
+                    <button type="submit" class="bg-white text-sm text-bluePrimary px-6 py-1.5 rounded-full">Sign up</button>
                 </form>
             </div>
 
