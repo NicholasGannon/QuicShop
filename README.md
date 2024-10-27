@@ -28,4 +28,5 @@ npm run dev
 - **Learn more** about QuicShop, how it works, and the benefits
 - Sign up for the application's **waitlist**
 - View the various **kinds of shoppers**
+- Read the in-depth **case study**
 - **Meet the team** behind QuicShop
