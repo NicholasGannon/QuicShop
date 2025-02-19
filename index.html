@@ -40,7 +40,7 @@
                         <!-- Shopper Type Dropdown -->
                         <div class="absolute hidden flex-col items-start bg-white text-bluePrimary p-3 rounded-lg outline outline-1 outline-gray-300 shadow-lg mt-4" id="shopper-type-links">
                             <a href="/common-shopper/" class="hover:bg-gray-100 p-3 rounded-lg"><i class="fa-regular fa-user"></i> &nbsp; Common Shopper</a>
-                            <a href="/personal-shopper/" class="hover:bg-gray-100 p-3 rounded-lg"><i class="fa-solid fa-bag-shopping"></i> &nbsp; Personal Shopper</a>
+                            <!--<a href="/personal-shopper/" class="hover:bg-gray-100 p-3 rounded-lg"><i class="fa-solid fa-bag-shopping"></i> &nbsp; Personal Shopper</a>-->
                             <a href="/store-chain/" class="hover:bg-gray-100 p-3 rounded-lg"><i class="fa-solid fa-shop"></i> &nbsp; Store Chain</a>
                         </div>
                     </li>
@@ -84,11 +84,6 @@
             </li>
 
             <li class="text-bluePrimary">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <a href="/personal-shopper/" class="hover:underline ml-2 sidebar-link">Personal Shopper</a>
-            </li>
-
-            <li class="text-bluePrimary">
                 <i class="fa-solid fa-shop"></i>
                 <a href="/store-chain/" class="hover:underline ml-2 sidebar-link">Store Chain</a>
             </li>
@@ -109,7 +104,7 @@
         <section class="custom-container flex flex-col gap-6 sm:grid sm:grid-cols-2 px-6 md:px-12">
             <div class="flex flex-col justify-center gap-6">
                 <h1 class="font-semibold leading-tight" style="font-size: clamp(1rem, 1.5vw + 1rem, 2.5rem)">With QuicShop, take control of your Shopping trip.</h1>
-                <p>An application aimed at <span class="underline">simplifying your grocery shopping</span> that helps customers navigate and locate items easily - An intuitive experience that will save you time!</p>
+                <p>An application aimed at <span class="underline">simplifying your grocery shopping</span> that helps customers navigate and locate the best items and deals easily!</p>
                 <form class="flex flex-col sm:flex-row gap-3" action="https://getlaunchlist.com/s/RB7TCY" method="POST">
                     <input name="email" type="email" placeholder="Enter email address" autocomplete="off" class="text-sm px-6 py-1.5 rounded-full border border-gray-400 focus:outline-none text-gray-600">
                     <button type="submit" class="text-sm text-white bg-bluePrimary px-6 py-1.5 rounded-full hover:bg-blueDark hover:duration-300">Sign up</button>
@@ -124,41 +119,33 @@
                 <div class="flex flex-col gap-6">
                     <span class="font-bold text-orangePrimary">About us</span>
                     <h2 class="font-semibold text-3xl">Explore what QuicShop has to offer for Shoppers.</h2>
-                    <p>Read about the steps involved when using the QuicShop mobile application. Learn about the various aspects and components on how we improve the personal shopping experience for users.</p>
+                    <p>Navigation, personalization, one-click-pay - All in one. Revolutionize your shopping trip with QuicShop. Save time, money, and get back to doing the things you love!</p>
                 </div>
 
                 <div class="flex flex-col gap-8">
                     <div class="flex flex-col gap-2">
                         <div class="flex gap-3">
-                            <img src="/assets/Speedometer-Icon.svg" alt="Speedometer icon">
-                            <h3 class="font-medium text-lg">Saving Time</h3>
-                        </div>
-                        <hr class="border-gray-400">
-                        <p class="font-light">During the ideation phase, our main end-goal when developing QuicShop was, "How can we save the user time?".</p>
-                    </div>
-                    <div class="flex flex-col gap-2">
-                        <div class="flex gap-3">
                             <img src="/assets/Map-Icon.svg" alt="Map icon">
-                            <h3 class="font-medium text-lg">Efficient Navigation</h3>
+                            <h3 class="font-medium text-lg">Navigate</h3>
                         </div>
                         <hr class="border-gray-400">
-                        <p class="font-light">With QuicShop's advanced technology, we assist users by showing them exactly where items are located.</p>
+                        <p class="font-light">Navigate to each item in your list, taking the most optimal route throughout the store to maximize efficiency. Never miss an item in your list.</p>
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex gap-3">
                             <img src="/assets/Ribbon-Icon.svg" alt="Ribbon icon">
-                            <h3 class="font-medium text-lg">Item Discovery</h3>
+                            <h3 class="font-medium text-lg">Personalize</h3>
                         </div>
                         <hr class="border-gray-400">
-                        <p class="font-light">Upon finding desired items, the application provides helpful cues, indicating that the correct item was found.</p>
+                        <p class="font-light">Be privy to the best deals through each aisle based on your list preferences and location within the store in the form of pop-ups and banner ads - Save money.</p>
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex gap-3">
                             <img src="/assets/Data-Icon.svg" alt="Data Storage icon">
-                            <h3 class="font-medium text-lg">Data Collection</h3>
+                            <h3 class="font-medium text-lg">One-Click Pay</h3>
                         </div>
                         <hr class="border-gray-400">
-                        <p class="font-light">After completing your trip, QuicShop stores the data and keeps it for the future to ensure a better shopping experience.</p>
+                        <p class="font-light">Link your credit card and have the luxury of scanning your items and paying for your cart without having to wait at the checkout line.</p>
                     </div>
                 </div>
             </div>
@@ -179,7 +166,7 @@
                 <div class="flex flex-col gap-6">
                     <span class="font-bold text-orangePrimary">Meet the Team</span>
                     <h2 class="font-semibold text-3xl">Learn more about those involved with QuicShop.</h2>
-                    <p>Read up on QuicShop's founders and the team of advisors: Our talented team is dedicated to driving innovation and delivering exceptional results! Each member brings unique skills, experiences, and perspectives!</p>
+                    <p>QuicShop is composed of experts and advisors who have operated in the venture capital, grocery, retail, and finance space.</p>
                 </div>
 
                 <div class="grid grid-cols-2 gap-3 md:gap-6">
@@ -201,14 +188,6 @@
                         <p class="text-sm font-light">Co-Founder of QuicShop, which gained recognition at Union College's Sparklab competition.</p>
                     </div>
 
-                    <div class="flex flex-col">
-                        <div class="relative overflow-hidden">
-                            <img src="/assets/Ross.png" alt="Ross Joel" class="w-full">
-                            <span class="text-[10px] sm:text-sm font-black text-bluePrimary bg-white border-2 border-orangePrimary absolute bottom-[10%] left-[7.5%] px-2 py-1 rounded-sm">Advisor</span>
-                        </div>
-                        <h3 class="font-bold mb-1">Ross Joel</h3>
-                        <p class="text-sm font-light">Retired CEO of BroadcastMed, one of the largest digital media platform companies in the US.</p>            
-                    </div>
                     <div class="flex flex-col">
                         <div class="relative overflow-hidden">
                             <img src="/assets/Gardy.png" alt="Gardy Berthoumieux" class="w-full">
@@ -259,10 +238,6 @@
                     </li>
 
                     <li>
-                        <a href="/personal-shopper/" class="hover:underline">Personal Shoppers</a>
-                    </li>
-
-                    <li>
                         <a href="/store-chain/" class="hover:underline">Store Chains</a>
                     </li>
 
@@ -296,10 +271,6 @@
                     </li>
 
                     <li>
-                        <a href="#" class="hover:underline">Ross Joel</a>
-                    </li>
-
-                    <li>
                         <a href="#" class="hover:underline">Gardy Berthoumieux</a>
                     </li>
 
@@ -315,7 +286,7 @@
 
             <div class="flex flex-col gap-4">
                 <img src="/assets/Footer-Logo.svg" alt="Logo" class="max-w-40">
-                <small class="text-sm text-blueSecondary">© 2024 Carb Group, LLC. All rights reserved.</small>
+                <small class="text-sm text-blueSecondary">© 2025 Carb Group, LLC. All rights reserved.</small>
             </div>
         </div>
     </footer>
