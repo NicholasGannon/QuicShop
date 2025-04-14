@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See the answers to frequently asked questions about QuicShop!">
+    <title>QuicShop | FAQ</title>
+    <link href="/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/Favicon.svg">
+    <!-- JS File Script -->
+    <script src="/script.js" defer></script>
+    <!-- Font (DM Sans) Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body class="font-display">
+    <!-- Navbar -->
+    <header class="relative shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-12 py-6">
+            <a href="/"><img src="/assets/Logo.svg" class="max-w-40" alt="Logo"></a>
+            <nav>
+                <ul class="hidden lg:flex items-center gap-6 font-medium text-sm">
+                    <li>
+                        <a href="/ai/" class="hover:underline">AI Features</a>
+                    </li>
+
+                    <li>
+                        <a href="/about/" class="hover:underline">About</a>
+                    </li>
+
+                    <li>
+                        <a href="/case-study/" class="hover:underline">Case Study</a>
+                    </li>
+
+                    <li>
+                        <button class="hover:underline cursor-pointer" id="shopperTypeButton">Shopper Type <i class="fa-solid fa-chevron-down transition-all duration-300" id="arrow"></i></button>
+                        <!-- Shopper Type Dropdown -->
+                        <div class="absolute hidden flex-col items-start bg-white text-bluePrimary p-3 rounded-lg outline outline-1 outline-gray-300 shadow-lg mt-4" id="shopper-type-links">
+                            <a href="/common-shopper/" class="hover:bg-gray-100 p-3 rounded-lg"><i class="fa-regular fa-user"></i> &nbsp; Common Shopper</a>
+                            <a href="/store-chain/" class="hover:bg-gray-100 p-3 rounded-lg"><i class="fa-solid fa-shop"></i> &nbsp; Store Chain</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="text-bluePrimary border border-bluePrimary px-4 py-1.5 rounded-full hover:bg-bluePrimary hover:text-white hover:duration-300">Contact us</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/" class="text-white border border-orangePrimary bg-orangePrimary px-6 py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300">Sign up</a>
+                    </li>
+                </ul>
+                <button class="text-3xl lg:hidden text-bluePrimary hover:cursor-pointer" id="hamburger" aria-label="Open the menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Side Bar Navigation -->
+    <section class="z-10 hidden right-0 bg-white p-12 shadow-lg animate-open-menu" id="sidebar" style="height: max(28rem, 100%)">
+        <ul class="flex flex-col items-start gap-6">
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-house"></i>
+                <a href="/" class="hover:underline ml-2 sidebar-link">Home</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-suitcase"></i>
+                <a href="/case-study/" class="hover:underline ml-2 sidebar-link">Case Study</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-hexagon-nodes"></i>
+                <a href="/ai/" class="hover:underline ml-2 sidebar-link">AI Features</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-people-group"></i>
+                <a href="/about/" class="hover:underline ml-2 sidebar-link">About</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="/common-shopper" class="hover:underline ml-2 sidebar-link">Common Shopper</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-shop"></i>
+                <a href="/store-chain" class="hover:underline ml-2 sidebar-link">Store Chain</a>
+            </li>
+
+            <li class="mt-4">
+                <a href="#contact" class=" text-bluePrimary border border-bluePrimary px-[42px] py-1.5 rounded-full hover:bg-bluePrimary hover:text-white hover:duration-300 sidebar-link">Contact us</a>
+            </li>
+            
+            <li>
+                <a href="/" class="text-white border border-orangePrimary bg-orangePrimary px-[55px] py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300 sidebar-link">Sign up</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Main Content -->
+    <main class="bg-gradient-to-tl md:bg-gradient-to-tr from-[#D0D2EB] via-white to-[#D0D2EB] pt-16" id="main">
+        <!--Shoppers FAQ Section-->
+        <div class="max-w-7xl mx-auto flex flex-col px-6 md:px-12">
+            <span class="font-bold text-orangePrimary mb-6">Shoppers</span>
+            <h2 class="font-semibold text-3xl">Frequently Asked Questions</h2>
+        </div>
+        <!-- Shoppers Questions -->
+        <section class="max-w-7xl mx-auto py-16 flex flex-col gap-6 sm:grid sm:grid-cols-2 px-6 md:px-12">
+            <!-- Accordion Item 1 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(1)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">How do I use QuicShop to plan my shopping trip?</span>
+                <span id="icon-1" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">Simply create your shopping list within the app. Once your list is ready, drive to your grocery store. After you've arrived, open your list and start your journey. QuicShop will guide you to each item in the most efficient route through the store, ensuring you save time and find the best deals along the way.</div>
+                </div>
+            </div>
+            
+            <!-- Accordion Item 2 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(2)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">Can I use QuicShop at any grocery store?</span>
+                <span id="icon-2" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">Currently, QuicShop is available at select stores, including our pilot at Price Chopper in Clifton Park, NY. We are actively expanding to more locations, and our app will notify you once your preferred store is available.</div>
+                </div>
+            </div>
+            
+            <!-- Accordion Item 3 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(3)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">How does the One-Click Pay work?</span>
+                <span id="icon-3" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">You only need to link your payment card to your account once. When you finish shopping, simply tap "Pay" in the app, and the payment will be processed instantly. No need to wait in line, and your store receipt will be sent directly to you.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(4)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">What if I can't find an item on my list in the store?</span>
+                <span id="icon-4" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">No worries! You will be made aware beforehand while creating your list the stock availability of an item. But, if you can't find an item in the store, you can go back to your list and recheck the location. If the item is out of stock, we'll recommend similar alternatives.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 5 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(5)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">How do I find the best deals?</span>
+                <span id="icon-5" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">QuicShop will show you personalized deals based on your location within the store. You'll have the option to view these deals in each aisle and filter by type of deal. While navigating the store, you'll be alerted with discounts for items on your list plus suggested items that match your preferences. You can also add coupons with applicable items with the click of a button.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 6 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(6)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">Do I need to scan every item as I shop?</span>
+                <span id="icon-6" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">Yes! To track your items and prices accurately, you'll need to scan each item's barcode as you place it in your cart. This helps us calculate the total and ensures a smooth one-click pay checkout experience.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 7 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(7)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">Is my payment information secure?</span>
+                <span id="icon-7" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-7" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">Yes, your payment details are securely processed through our trusted payment provider, Stripe. We use the latest encryption technology to ensure your information remains safe.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 8 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(8)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">How can I update my shopping list?</span>
+                <span id="icon-8" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-8" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">You can add, remove, or modify items on your list at any time within the app. Changes will be reflected immediately in the navigation system to help you stay on track during your shopping trip.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stores FAQ Section -->
+        <div class="max-w-7xl mx-auto flex flex-col px-6 md:px-12">
+            <span class="font-bold text-orangePrimary mb-6">Stores</span>
+            <h2 class="font-semibold text-3xl">Frequently Asked Questions</h2>
+        </div>
+        <!-- Stores Questions -->
+        <section class="max-w-7xl mx-auto py-16 flex flex-col gap-6 sm:grid sm:grid-cols-2 px-6 md:px-12">
+            <!-- Accordion Item 9 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(9)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">How does QuicShop benefit my store?</span>
+                <span id="icon-9" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-9" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">QuicShop helps increase basket size by promoting personalized deals to shoppers and guiding them to items efficiently. With QuicShop, you'll see increased sales, improved shopper satisfaction, and valuable data on customer behavior.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 10 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(10)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">Will QuicShop integrate my store's POS system?</span>
+                <span id="icon-10" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-10" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">Yes, QuicShop can seamlessly integrate with your POS system to notify your staff when an order has been paid through the app, ensuring a smooth in-store experience without any disruptions.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 11 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(11)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">How does QuicShop handle store layout and inventory?</span>
+                <span id="icon-11" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-11" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">We take your store's floor plan and digitize it, integrating the store's inventory into our app. This allows QuicShop to guide shoppers efficiently, showing them exactly where to find items on their list, including highlighting available deals.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 12 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(12)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">How do you ensure the accuracy of prices in the app?</span>
+                <span id="icon-12" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-12" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">We link your store's inventory and pricing systems to our app. This ensures real-time price updates and accurate deal notifications for shoppers, minimizing any discrepancies between the app and the actual in-store prices.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 13 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(13)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">What is the cost for my store to use QuicShop?</span>
+                <span id="icon-13" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-13" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">There's no cost for the store to integrate or use QuicShop. The store receives the full payment for the grocery order. QuicShop takes a small service fee only if there is an increase in basket size driven by the app's personalized navigation and deal recommendations, ultimately benefiting your store's revenue.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 14 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(14)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">What kind of data will QuicShop provide to my store?</span>
+                <span id="icon-14" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-14" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">QuicShop provides valuable insights on shopper behavior, including which items are most popular, shopping patterns, and deal effectiveness. This data can help you optimize your inventory, promotions, and customer engagement strategies.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 15 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(15)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">How do I get started with QuicShop at my store?</span>
+                <span id="icon-15" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-15" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">To start, we'll work with you to integrate your store's floor plan, inventory, and POS system into the app. From there, we'll schedule a pilot phase where you can see firsthand how QuicShop improves the shopping experience and boosts sales.</div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 16 -->
+            <div class="border-b border-slate-200">
+                <button onclick="toggleAccordion(16)" class="w-full flex justify-between items-center py-5 text-slate-800 hover:cursor-pointer">
+                <span class="text-start">Will QuicShop help reduce checkout line congestion?</span>
+                <span id="icon-16" class="text-slate-800 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                    <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                    </svg>
+                </span>
+                </button>
+                <div id="content-16" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-5 text-sm text-slate-500">Yes! With the One-Click Pay feature, customers can complete their payment directly in the app and skip the checkout line. This not only improves the customer experience but also reduces wait times, making your store more efficient overall.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-bluePrimary" id="contact">
+        <div class="max-w-7xl mx-auto py-16 flex flex-col lg:flex-row justify-between gap-6 px-6 md:px-12">
+            <div class="flex flex-col gap-3">
+                <span class="text-white font-semibold">Sign up</span>
+                <form class="flex flex-col sm:flex-row gap-3" action="https://getlaunchlist.com/s/RB7TCY" method="POST">
+                    <input name="email" type="email" placeholder="Email address" autocomplete="off" class="bg-transparent text-sm text-white placeholder-white border border-white focus:outline-none px-6 py-1.5 rounded-full">
+                    <button type="submit" class="bg-white text-sm text-bluePrimary px-6 py-1.5 rounded-full">Sign up</button>
+                </form>
+                <a href="https://www.linkedin.com/company/quicshop1/" class="text-blueSecondary text-3xl hover:text-white duration-300" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <span class="text-white font-semibold">Company</span>
+                <ul class="flex flex-col gap-1 text-blueSecondary">
+                    <li>
+                        <a href="/common-shopper/" class="hover:underline">Common Shoppers</a>
+                    </li>
+
+                    <li>
+                        <a href="/store-chain/" class="hover:underline">Store Chains</a>
+                    </li>
+
+                    <li>
+                        <a href="/case-study/" class="hover:underline">Case Study</a>
+                    </li>
+
+                    <li>
+                        <a href="/ai/" class="hover:underline">AI Features</a>
+                    </li>
+
+                    <li>
+                        <a href="/about/" class="hover:underline">About</a>
+                    </li>
+
+                    <li>
+                        <a href="/faq/" class="hover:underline">Frequently Asked Questions</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <span class="text-white font-semibold">Contact</span>
+                <ul class="flex flex-col gap-1 text-blueSecondary">
+                    <li>
+                        <a href="mailto:updates@quicshop.io" class="hover:underline">updates@quicshop.io</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:justin.regis@quicshop.io" class="hover:underline">Justin Regis</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:sean.regis@quicshop.io" class="hover:underline">Sean Regis</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:gardy@visionariovc.com" class="hover:underline">Gardy Berthoumieux</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:keith@visionariovc.com" class="hover:underline">Keith Levy</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:tversaci@versana.io" class="hover:underline">Tony Versaci</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <img src="/assets/Footer-Logo.svg" alt="Logo" class="max-w-40">
+                <small class="text-sm text-blueSecondary">© 2025 Carb Group, LLC. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FontAwesome Embed -->
+    <script src="https://kit.fontawesome.com/d4fd18ea18.js" crossorigin="anonymous"></script>
+</body>
+</html>

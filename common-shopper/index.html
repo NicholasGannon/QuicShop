@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take your everyday shopping to the next level with QuicShop for Common Shoppers!">
+    <title>QuicShop | Common Shopper</title>
+    <link href="/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/Favicon.svg">
+    <!-- JS File Script -->
+    <script src="/script.js" defer></script>
+    <!-- Font (DM Sans) Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body class="font-display">
+    <!-- Navbar -->
+    <header class="relative shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 md:px-12 py-6">
+            <a href="/"><img src="/assets/Logo.svg" class="max-w-40" alt="Logo"></a>
+            <nav>
+                <ul class="hidden lg:flex items-center gap-6 font-medium text-sm">
+                    <li>
+                        <a href="/ai/" class="hover:underline">AI Features</a>
+                    </li>
+
+                    <li>
+                        <a href="/about/" class="hover:underline">About</a>
+                    </li>
+
+                    <li>
+                        <a href="/case-study/" class="hover:underline">Case Study</a>
+                    </li>
+
+                    <li>
+                        <button class="hover:underline cursor-pointer" id="shopperTypeButton">Shopper Type <i class="fa-solid fa-chevron-down transition-all duration-300" id="arrow"></i></button>
+                        <!-- Shopper Type Dropdown -->
+                        <div class="absolute hidden flex-col items-start bg-white text-bluePrimary p-3 rounded-lg outline outline-1 outline-gray-300 shadow-lg mt-4" id="shopper-type-links">
+                            <a href="/common-shopper/" class="hover:bg-gray-100 p-3 rounded-lg"><i class="fa-regular fa-user"></i> &nbsp; Common Shopper</a>
+                            <a href="/store-chain/" class="hover:bg-gray-100 p-3 rounded-lg"><i class="fa-solid fa-shop"></i> &nbsp; Store Chain</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="text-bluePrimary border border-bluePrimary px-4 py-1.5 rounded-full hover:bg-bluePrimary hover:text-white hover:duration-300">Contact us</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/" class="text-white border border-orangePrimary bg-orangePrimary px-6 py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300">Sign up</a>
+                    </li>
+                </ul>
+                <button class="text-3xl lg:hidden text-bluePrimary hover:cursor-pointer" id="hamburger" aria-label="Open the menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Side Bar Navigation -->
+    <section class="z-10 hidden right-0 bg-white p-12 shadow-lg animate-open-menu" id="sidebar" style="height: max(28rem, 100%)">
+        <ul class="flex flex-col items-start gap-6">
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-house"></i>
+                <a href="/" class="hover:underline ml-2 sidebar-link">Home</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-suitcase"></i>
+                <a href="/case-study/" class="hover:underline ml-2 sidebar-link">Case Study</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-hexagon-nodes"></i>
+                <a href="/ai/" class="hover:underline ml-2 sidebar-link">AI Features</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-people-group"></i>
+                <a href="/about/" class="hover:underline ml-2 sidebar-link">About</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-shop"></i>
+                <a href="/store-chain/" class="hover:underline ml-2 sidebar-link">Store Chain</a>
+            </li>
+
+            <li class="text-bluePrimary">
+                <i class="fa-solid fa-circle-question"></i>
+                <a href="/faq/" class="hover:underline ml-2 sidebar-link">FAQ's</a>
+            </li>
+
+            <li class="mt-4">
+                <a href="#contact" class=" text-bluePrimary border border-bluePrimary px-[42px] py-1.5 rounded-full hover:bg-bluePrimary hover:text-white hover:duration-300 sidebar-link">Contact us</a>
+            </li>
+            
+            <li>
+                <a href="/" class="text-white border border-orangePrimary bg-orangePrimary px-[55px] py-1.5 rounded-full hover:bg-orangeSecondary hover:duration-300 sidebar-link">Sign up</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Main Content -->
+    <main class="bg-white" id="main">
+        <!-- Hero Section -->
+        <section class="max-w-7xl mx-auto py-16 flex flex-col gap-6 sm:grid sm:grid-cols-2 px-6 md:px-12">
+            <div class="flex flex-col justify-center gap-6">
+                <h1 class="font-semibold leading-tight" style="font-size: clamp(1rem, 1.5vw + 1rem, 2.5rem)">How does QuicShop help the Shopper?</h1>
+                <p>QuicShop streamlines your shopping trip while also helping you save money. Our end goal is to improve your experience &amp; satisfaction while in the grocery store.</p>
+                <a href="#how-it-works" class="text-center sm:self-start text-sm text-white bg-bluePrimary px-6 py-1.5 rounded-full hover:bg-blueDark hover:duration-300">Learn More</a>
+            </div>
+            <img src="/assets/Common-Shopper-Icon.svg" alt="An icon of a person placing an item on a screen" class="justify-self-end rounded-xl">
+        </section>
+
+        <!-- How it Works Section -->
+        <section class="bg-gradient-to-tr from-[#D0D2EB] via-white to-[#D0D2EB]" id="how-it-works">
+            <div class="max-w-7xl mx-auto py-16 flex flex-col sm:grid sm:grid-cols-2 gap-16 px-6 md:px-12">
+                <div class="flex flex-col gap-6">
+                    <span class="font-bold text-orangePrimary">How it works</span>
+                    <h2 class="font-semibold text-3xl">Guide on using QuicShop</h2>
+                    <p>QuicShop is easy to use: Just make your list, find your items using navigation, and when you're done, pay on our platform. You'll be in-and-out of the store in no-time while also being shown the best deals, aisle by aisle.</p>
+                </div>
+
+                <div class="flex flex-col gap-8">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex gap-3">
+                            <img src="/assets/BookOpen-Icon.svg" alt="Open book icon">
+                            <h3 class="font-medium text-lg">Create Your Shopping List</h3>
+                        </div>
+                        <hr class="border-gray-400">
+                        <p class="font-light">Easily create and organize your grocery list in the app before heading to the store, ensuring you're fully prepared for a streamlined shopping experience.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex gap-3">
+                            <img src="/assets/Cursor-Arrow-Icon.svg" alt="Pointer cursor icon">
+                            <h3 class="font-medium text-lg">Effortless Navigation &amp; Deal Discovery</h3>
+                        </div>
+                        <hr class="border-gray-400">
+                        <p class="font-light">Let our smart navigation guide you to the exact locations of your items and highlight personalized deals along the way, saving you time &amp; money as you move through the aisles.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex gap-3">
+                            <img src="/assets/Checkbox-Icon.svg" alt="Checkbox icon">
+                            <h3 class="font-medium text-lg">Skip the line with One-Click Pay</h3>
+                        </div>
+                        <hr class="border-gray-400">
+                        <p class="font-light">After adding your last item to the cart, simply tap "Pay" to complete your purchase instantly within the app. With your card already linked, you can bypass the checkout line &amp; enjoy a seamless, secure payment experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Benefits Section -->
+        <section class="bg-gradient-to-tr from-[#FFE1CE] via-white to-[#FFE1CE]" id="benefits">
+            <div class="max-w-7xl mx-auto pt-16 pb-32 flex flex-col gap-12 px-6 md:px-12">
+                <div class="flex flex-col gap-6">
+                    <span class="font-bold text-orangePrimary">Benefits</span>
+                    <h2 class="font-semibold text-3xl md:max-w-[50%]">View the various benefits of being a Common Shopper</h2>
+                    <p class="md:max-w-[50%]">There are multiple benefits to our personal shopper assistant. QuicShop exists to maximize your time, savings, and overall efficiency.</p>
+                    <div class="flex flex-col sm:grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+                        <div class="flex flex-col items-start gap-3 bg-white border border-[1.5px] border-[#EDD2C1] p-4 rounded-md">
+                            <img src="/assets/Fast-Forward-Icon.svg" alt="Fast forward icon">
+                            <span class="font-bold">Shop over 60% faster</span>
+                            <p>Navigate aisles with ease, using QuicShop's intelligent route planning!</p>
+                        </div>
+                        <div class="flex flex-col items-start gap-3 bg-white border border-[1.5px] border-[#EDD2C1] p-4 rounded-md">
+                            <img src="/assets/Calendar-Icon.svg" alt="Calendar icon">
+                            <span class="font-bold">Personalize your Trip</span>
+                            <p>Save money by finding deals related to your list and location within the store.</p>
+                        </div>
+                        <div class="flex flex-col items-start gap-3 bg-white border border-[1.5px] border-[#EDD2C1] p-4 rounded-md">
+                            <img src="/assets/Credit-Card-Icon.svg" alt="Credit card icon">
+                            <span class="font-bold">One-Click Pay</span>
+                            <p>Hate waiting on line>? We do too, so link your credit card and pay for your cart on our app.</p>
+                        </div>
+                        <div class="flex flex-col items-start gap-3 bg-white border border-[1.5px] border-[#EDD2C1] p-4 rounded-md">
+                            <img src="/assets/Bookmark-Icon.svg" alt="Bookmark icon">
+                            <span class="font-bold">Never Forget an Item</span>
+                            <p>Make your list before you reach the store so you never miss an item.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-bluePrimary" id="contact">
+        <div class="max-w-7xl mx-auto py-16 flex flex-col lg:flex-row justify-between gap-6 px-6 md:px-12">
+            <div class="flex flex-col gap-3">
+                <span class="text-white font-semibold">Sign up</span>
+                <form class="flex flex-col sm:flex-row gap-3" action="https://getlaunchlist.com/s/RB7TCY" method="POST">
+                    <input name="email" type="email" placeholder="Email address" autocomplete="off" class="bg-transparent text-sm text-white placeholder-white border border-white focus:outline-none px-6 py-1.5 rounded-full">
+                    <button type="submit" class="bg-white text-sm text-bluePrimary px-6 py-1.5 rounded-full">Sign up</button>
+                </form>
+                <a href="https://www.linkedin.com/company/quicshop1/" class="text-blueSecondary text-3xl hover:text-white duration-300" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <span class="text-white font-semibold">Company</span>
+                <ul class="flex flex-col gap-1 text-blueSecondary">
+                    <li>
+                        <a href="/common-shopper/" class="hover:underline">Common Shoppers</a>
+                    </li>
+
+                    <li>
+                        <a href="/store-chain/" class="hover:underline">Store Chains</a>
+                    </li>
+
+                    <li>
+                        <a href="/case-study/" class="hover:underline">Case Study</a>
+                    </li>
+
+                    <li>
+                        <a href="/ai/" class="hover:underline">AI Features</a>
+                    </li>
+
+                    <li>
+                        <a href="/about/" class="hover:underline">About</a>
+                    </li>
+
+                    <li>
+                        <a href="/faq/" class="hover:underline">Frequently Asked Questions</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <span class="text-white font-semibold">Contact</span>
+                <ul class="flex flex-col gap-1 text-blueSecondary">
+                    <li>
+                        <a href="mailto:updates@quicshop.io" class="hover:underline">updates@quicshop.io</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:justin.regis@quicshop.io" class="hover:underline">Justin Regis</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:sean.regis@quicshop.io" class="hover:underline">Sean Regis</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:gardy@visionariovc.com" class="hover:underline">Gardy Berthoumieux</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:keith@visionariovc.com" class="hover:underline">Keith Levy</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:tversaci@versana.io" class="hover:underline">Tony Versaci</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex flex-col gap-4">
+                <img src="/assets/Footer-Logo.svg" alt="Logo" class="max-w-40">
+                <small class="text-sm text-blueSecondary">© 2025 Carb Group, LLC. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FontAwesome Embed -->
+    <script src="https://kit.fontawesome.com/d4fd18ea18.js" crossorigin="anonymous"></script>
+</body>
+</html>

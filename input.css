@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+    --animate-open-menu: open-menu 0.5s ease-in-out forwards;
+
+    @keyframes open-menu {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    --font-display: "DM Sans", "sans-serif";
+
+    --color-orangePrimary: #FF6200;
+    --color-orangeSeconday: #ED5A00;
+    --color-bluePrimary: #3F3D56;
+    --color-blueSecondary: #C0BDE3;
+    --color-blueLight: #EFF1FF;
+    --color-blueDark: #2b2940;
+    --color-grayPrimary: #404040;
+}
